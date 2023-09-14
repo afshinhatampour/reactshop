@@ -9,6 +9,7 @@ import TicketAll from "./components/TicketAll";
 import Order from "./components/Order";
 import ShopLayout from "./components/ShopLayout";
 import Catalogue from "./components/Catalogue";
+import Product from "./components/Product";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
                 element: <Home/>,
             }
         ]
+    },
+    {
+        path: "product/:id",
+        element: <Product/>,
     },
     {
         path: "/about",

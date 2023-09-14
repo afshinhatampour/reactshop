@@ -56,6 +56,7 @@ function Home() {
                     {
                         specialOffers.map(specialOffer => {
                             return (<Card
+                                productId={specialOffer.original.data.id}
                                 bgColor={specialOffer.original.data.color_code}
                                 title={specialOffer.original.data.title}
                                 content={specialOffer.original.data.content}
@@ -71,6 +72,7 @@ function Home() {
                     {
                         mostViews.map(mostView => {
                             return (<Card
+                                productId={mostView.original.data.id}
                                 bgColor={mostView.original.data.color_code}
                                 title={mostView.original.data.title}
                                 content={mostView.original.data.content}
@@ -94,6 +96,7 @@ function Home() {
                     {
                         biggestDiscounts.map(biggestDiscount => {
                             return (<Card
+                                productId={biggestDiscount.original.data.id}
                                 bgColor={biggestDiscount.original.data.color_code}
                                 title={biggestDiscount.original.data.title}
                                 content={biggestDiscount.original.data.content}

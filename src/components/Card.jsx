@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 function Card(props) {
     return (
         <div className={'p-3 ' + props.gridSize}>
@@ -6,7 +8,7 @@ function Card(props) {
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>
                     <p className="card-text text-muted">{props.content}</p>
-                    <a href="#" className="btn btn-sm btn-primary">view</a>
+                    <Link to={'/product/' + props.productId} className="btn btn-sm btn-primary">view</Link>
                 </div>
             </div>
         </div>
