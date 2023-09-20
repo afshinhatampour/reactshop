@@ -31,6 +31,7 @@ function Product() {
                     <div className="col-md-8">
                         <h1 className={placeholderClass + " display-6"}>{product.title}</h1>
                         <p className={placeholderClass + " text-muted"}>{product.content}</p>
+                        <p>price: {Math.round(Math.random() * 100)}$</p>
                         <button className="btn btn-primary">add to basket</button>
                     </div>
                     <div className="col-md-4">
