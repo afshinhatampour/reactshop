@@ -31,11 +31,11 @@ function Product() {
                     <div className="col-md-8">
                         <h1 className={placeholderClass + " display-6"}>{product.title}</h1>
                         <p className={placeholderClass + " text-muted"}>{product.content}</p>
-                        <p>price: {Math.round(Math.random() * 100)}$</p>
+                        <p>price: {product.price}$</p>
                         <button className="btn btn-primary">add to basket</button>
                     </div>
                     <div className="col-md-4">
-                        <img src={`https://prd.place/400?id=${Math.floor(Math.random() * 10)}`} className="card-img-top"
+                        <img src={`https://prd.place/400?id=${product.id}`} className="card-img-top"
                              alt="csdc"/>
                     </div>
                 </div>
